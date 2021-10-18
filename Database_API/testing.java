@@ -1,10 +1,19 @@
 import java.util.Scanner;
 class testing{
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        Data_Writer dw = new Data_Writer("sample_data.csv");
+        
+        System.out.println("Would you like to update the recipe book? (y/n)");
+        String write = sc.nextLine();
+        while(write.equals("y")){
+            dw.set(sc);
+            dw.write_csv();
+            System.out.println("Any more recipes to add? (y/n)");
+            write = sc.nextLine();
+        }
         Data_Retriever dr = new Data_Retriever("user", "abc1234", "sample_data.csv");
         dr.read_csv();
-
-        Scanner sc = new Scanner(System.in);
         System.out.println("Which recipe would you like to know about?");
         String recipe = sc.nextLine();
 
@@ -40,7 +49,7 @@ class testing{
             System.out.println("Please enter (1) for ingredients, (2) for Descriptions and (3) for instructions of the recipe.");
             choice = sc.nextInt();
         }
-        if (choice == 1) System.out.println("\n The ingredient(s) for " + recipe+ " is " + dr.get_ingredients(recipe) + ".");
+        if (choice == 1) System.out.println("\nThe ingredient(s) for " + recipe+ " is " + dr.get_ingredients(recipe) + ".");
         else if (choice == 2) System.out.println("\n" + recipe + " is(are) " + dr.get_description(recipe) + ".");
         else System.out.println("\n" + "To make " + recipe + " " + dr.get_instructions(recipe) + ".");
     }
