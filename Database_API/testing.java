@@ -58,7 +58,7 @@ class testing{
 
             if (step.equals("y")){
                 String ins = (String) dr.get_instructions(recipe);
-                System.out.println("Here are the recipe for " + recipe + " step-by-step");
+                System.out.println("Here are the instructions for " + recipe + " step-by-step");
                 int j = 0;
                 for (int i = 1; i < ins.length();i++){
                     if (Character.isDigit(ins.charAt(i))){
