@@ -1,5 +1,12 @@
+<<<<<<< HEAD
+recipe_name,description,ingredients,instructions 
+cookie,delicious,eggs,bake
+pizza,deep dish, flour;sauce;cheese,bake at 350 for 25 mins
+
+=======
 recipe_name,description,ingredients,instructions 
 cookie,delicious,eggs,bake
 cake,sweet,flour,bake again
 
 eggnog,cozy,eggs,hot egg
+>>>>>>> 4997fae1cb0f91d2af2e90b062e10b056050f640
