@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 recipe_name,description,ingredients,instructions 
-cookie,delicious,eggs,bake
-pizza,deep dish, flour;sauce;cheese,bake at 350 for 25 mins
-
-=======
-recipe_name,description,ingredients,instructions 
-cookie,delicious,eggs,bake
-cake,sweet,flour,bake again
-
-eggnog,cozy,eggs,hot egg
->>>>>>> 4997fae1cb0f91d2af2e90b062e10b056050f640
+bread,this is a baked good,1.Flour 2.Eggs 3.Water, 1.Mix Ingredients 2.Knead the dough 3.Bake at three hundred seventy five degrees Farenheit for thirty minutes
+omelet,this is a breakfast item,1.Eggs 2.Spinach 3.Tomatoes,1.Beat the eggs 2.Mix in vegetables 3.Fry on the pan
+ramen,this is a quick snack,1.Water 2.Ramen packet,1.Boil water 2.Pour in noodles and ingredients
+pesto pasta,pasta with pesto,1. pesto 2. pasta,1. boil water 2. add pasta and cook for eighteen minutes 3. when pasta is cooked drain the pasta and leave a cup of pasta water 4. on a frying pan add pasta and olive oil 5. add pesto 6. stir fry and serve

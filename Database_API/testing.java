@@ -51,6 +51,26 @@ class testing{
         }
         if (choice == 1) System.out.println("\nThe ingredient(s) for " + recipe+ " is " + dr.get_ingredients(recipe) + ".");
         else if (choice == 2) System.out.println("\n" + recipe + " is(are) " + dr.get_description(recipe) + ".");
-        else System.out.println("\n" + "To make " + recipe + " " + dr.get_instructions(recipe) + ".");
+        else {
+            System.out.println("Would you like me to go through the instruction step by step? (y/n)");
+
+            String step = sc.next();
+
+            if (step.equals("y")){
+                String ins = (String) dr.get_instructions(recipe);
+                System.out.println("Here are the recipe for " + recipe + " step-by-step");
+                int j = 0;
+                for (int i = 1; i < ins.length();i++){
+                    if (Character.isDigit(ins.charAt(i))){
+                        System.out.println(ins.substring(j, i));
+                        j = i;
+                    }
+                }
+                System.out.println(ins.substring(j,ins.length()));
+            }
+            else{
+                System.out.println("\n" + "To make " + recipe + " " + dr.get_instructions(recipe) + ".");
+            }
+        }
     }
 }
